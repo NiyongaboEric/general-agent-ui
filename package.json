@@ -1,0 +1,27 @@
+{
+  "name": "general-agent-ui",
+  "version": "1.0.0",
+  "description": "The General Agent user interface is designed to connect businesses with customers.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiyongaboEric/general-agent-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiyongaboEric/general-agent-ui/issues"
+  },
+  "homepage": "https://github.com/NiyongaboEric/general-agent-ui#readme",
+  "dependencies": {
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
