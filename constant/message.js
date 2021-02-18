@@ -11,3 +11,5 @@ export const TOTAL_PAYMENT_REMAINING_MESSAGE = 'Total payment remaining';
 export const PRICE_MESSAGE = 'Price';
 export const PAGE_FAILED_TO_LOAD_MESSAGE = 'failed to load';
 export const LOADING_MESSAGE = 'loading...';
+export const PAY_BY_DIALING_MESSAGE = 'Pay by dialing';
+export const CODE = '*182*24*88989898#';

@@ -10,3 +10,11 @@ export const useViewAllProduct = () => {
     isError: error
   }
 };
+export const useViewProduct = (id) => {
+  const { data, error } = useSWR(`/api/products/${id}`, fetcher)
+  return {
+    data,
+    isLoading: !error && !data,
+    isError: error
+  }
+};

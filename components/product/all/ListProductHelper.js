@@ -29,7 +29,7 @@ const DetailsInfo = (props) => {
 export const ListProductHelper = (props) => {
   const { item } = props;
   return (
-    <Link href={`/product/${item.id_no}`}>
+    <Link href={`/products/${item.id_no}`}>
       <a>
         <div className={productStyle.oneProduct}>
           <section className={productStyle.topSection}>
