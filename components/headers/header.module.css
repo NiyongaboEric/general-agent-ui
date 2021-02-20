@@ -1,0 +1,104 @@
+.navbarContainer {
+  min-height: 67px;
+}
+
+.mainNav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  box-shadow: -1px 2px 2px 0px rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.logoContainer {
+  cursor: pointer;
+}
+
+.logoContainer .imageSize {
+  width: 156px;
+  height: 46px;
+}
+
+.navbarList {
+  list-style: none;
+  display: flex;
+}
+
+.navbarList .navbarListItems {
+  margin: 0 5px;
+}
+
+.navbarList .navbarListItems button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.navbarList .navbarListItems button:hover {
+  color: #2690f4;
+  cursor: pointer;
+}
+
+.navbarList .navbarListItems button img {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .mainNav {
+    padding: 0 20px;
+  }
+  .logoContainer .imageSize {
+    width: 105px;
+    height: 35px;
+  }
+
+  .mainNav .navbarList .navbarListItems button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mainNav .navbarList .navbarListItems a {
+    display: none;
+  }
+
+  .mainNav {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .navbarContainer {
+    min-height: 80px;
+  }
+
+  .logoContainer .imageSize {
+    width: 120px;
+    height: 40px;
+  }
+
+  .mainNav .navbarList .navbarListItems button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainNav {
+    justify-content: inherit;
+  }
+
+  .mainNav .navbarList .navbarListItems a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+  .mainNav .navbarList .navbarListItems button {
+    display: flex;
+    flex-direction: column;
+  }
+}

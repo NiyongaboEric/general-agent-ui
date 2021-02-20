@@ -4,16 +4,18 @@ import {
   DESCRIPTION_MESSAGE,
   KEYWORDS_MESSAGE
 } from './../constant/message';
+import { LandingPage } from '../components/homePage/LandingPage';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Meta
         title={TITLE_MESSAGE}
         description={DESCRIPTION_MESSAGE}
         keywords={KEYWORDS_MESSAGE}
       />
-    </div>
+      <LandingPage />
+    </>
   );
 }
 
