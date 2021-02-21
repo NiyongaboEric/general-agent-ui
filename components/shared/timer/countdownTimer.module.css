@@ -1,0 +1,51 @@
+.timerContainer {
+  color: black;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.timer  {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 7px 10px;
+  text-align: center;
+}
+
+.timer span {
+  font-size: 1.5em;
+}
+
+.timer p:first-child {
+  font-weight: bold;
+}
+
+.timer p:last-child {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .timerContainer {
+    margin: 15px auto;
+  }
+
+  .timer  {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .timer  {
+    padding: 4px 30px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+  .timerContainer {
+    width: 55%;
+  }
+}
