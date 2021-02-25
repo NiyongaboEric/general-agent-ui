@@ -5,18 +5,13 @@ import { Info } from '../footer/Info';
 import { AllProducts } from '../product/all/AllProducts';
 
 export const LandingPage = (props) => {
-  const { allProductsData } = props;
   return (
     <>
       <Header />
       <Advertise />
-      <AllProducts allProductsData={allProductsData} />
+      <AllProducts />
       <Partners />
       <Info />
     </>
   );
-};
-
-LandingPage.defaultProps = {
-  allProductsData: [],
 };

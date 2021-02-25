@@ -9,3 +9,5 @@ export const NO_PRODUCT_AVAILABLE_MESSAGE = 'No products available';
 export const ITEMS_REMAINING_IN_STOCK_MESSAGE = 'Items remaining in Stock';
 export const TOTAL_PAYMENT_REMAINING_MESSAGE = 'Total payment remaining';
 export const PRICE_MESSAGE = 'Price';
+export const PAGE_FAILED_TO_LOAD_MESSAGE = 'failed to load';
+export const LOADING_MESSAGE = 'loading...';
