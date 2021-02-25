@@ -35,7 +35,7 @@ export const ListProductHelper = (props) => {
           <section className={productStyle.topSection}>
             <h2 className={productStyle.productTitle}>{item.product_title}</h2>
             <Image
-              src={item.product_images[0].image_three}
+              src={item.product_images[0].image_one}
               width={300}
               height={220}
               alt={item.product_title}

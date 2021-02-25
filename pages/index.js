@@ -24,30 +24,14 @@ const Home = (props) => {
   );
 }
 
-export const getServerSideProps = async () => {
-  try {
-    const res = await fetch(`${server}/api/products`);
-    const data = await res.json();
-    if (!data) {
-      console.error('-----No Data ------>', error);
-      return {
-        notFound: true,
-      }
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/products`);
+  const data = await res.json();
+  return {
+    props: {
+      allProductsData: data,
     }
-    console.error('----- Data ------>', data);
-    return {
-      props: {
-        allProductsData: data|| [],
-      }
-    }  
-  } catch (error) {
-    console.error('-----error ------>', error);
-    return {
-      props: {
-        allProductsData: null,
-      }
-    };
   }
-};
+}
 
 export default Home;

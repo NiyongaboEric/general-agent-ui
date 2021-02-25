@@ -1,11 +1,10 @@
 export const TITLE_MESSAGE = 'General Agent';
+export const PROJECT_COLOUR_MESSAGE = "#2690F4";
 export const DESCRIPTION_MESSAGE = 'Join others whom you share common interest to buy your favourites items at affordable price';
 export const KEYWORDS_MESSAGE = 'Advertise, deals, branding, collaboration, multiple products, partnerships';
-export const AGENT_LOGO_MESAGE = 'General Agent logo';
 export const KINYARWANDA_LANGUAGE_MESSAGE = "Change to kinyarwanda language";
 export const ENGLISH_LANGUAGE_MESSAGE = "Change to English language";
 export const BUY_ALL_PRODUCT_MESSAGE = "What you see is already yours claim it!";
-export const PROJECT_COLOUR_MESSAGE = "#2690F4";
 export const NO_PRODUCT_AVAILABLE_MESSAGE = 'No products available';
 export const ITEMS_REMAINING_IN_STOCK_MESSAGE = 'Items remaining in Stock';
 export const TOTAL_PAYMENT_REMAINING_MESSAGE = 'Total payment remaining';

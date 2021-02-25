@@ -53,16 +53,19 @@
   .infoPartner .partner_0 {
     width: 80px;
     height: 80px;
+    padding: 3px 0;
   }
   
   .infoPartner .partner_1 {
     width: 200px;
     height: 60px;
+    padding: 3px 0;
   }
   
   .infoPartner .partner_2 {
     width: 100px;
     height: 100px;
+    padding: 3px 0;
   }
 }
 
@@ -84,16 +87,19 @@
   .infoPartner .partner_0 {
     width: 90px;
     height: 90px;
+    padding: 3px 0;
   }
   
   .infoPartner .partner_1 {
     width: 210px;
     height: 67px;
+    padding: 3px 0;
   }
   
   .infoPartner .partner_2 {
     width: 110px;
     height: 110px;
+    padding: 3px 0;
   }
 }
 
@@ -106,5 +112,22 @@
   .landinPageAdvert img {
     width: 100%;
     height: 250px;
+  }
+  .infoPartner .partner_0 {
+    width: 90px;
+    height: 90px;
+    padding: 3px 0;
+  }
+  
+  .infoPartner .partner_1 {
+    width: 210px;
+    height: 67px;
+    padding: 3px 0;
+  }
+  
+  .infoPartner .partner_2 {
+    width: 110px;
+    height: 110px;
+    padding: 3px 0;
   }
 }

@@ -1,4 +1,4 @@
-import { listPartners } from '../../constant/listedObject';
+import { listPartners, } from '../../constant/listedObject';
 import LandingPageStyle from './homePage.module.css';
 
 export const Partners = () => {
