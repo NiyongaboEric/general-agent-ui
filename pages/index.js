@@ -6,7 +6,8 @@ import {
 } from './../constant/message';
 import { LandingPage } from '../components/homePage/LandingPage';
 
-const Home = () => {
+
+const Home = (props) => {
   return (
     <>
       <Meta

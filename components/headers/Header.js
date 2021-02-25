@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  AGENT_LOGO_MESAGE,
-} from '../../constant/message';
-import {
+  defaultImages,
   languageListProperties,
 } from '../../constant/listedObject';
 import HeaderStyle from './header.module.css';
+
 
 export const Header = () => {
   return (
@@ -15,8 +14,8 @@ export const Header = () => {
         <div className={HeaderStyle.logoContainer}>
           <Link href="/">
             <img
-              src="/assets/images/logo.png"
-              alt={AGENT_LOGO_MESAGE}
+              src={defaultImages.logo.imgPath}
+              alt={defaultImages.logo.imgAlt}
               className={HeaderStyle.imageSize}
             />
           </Link>

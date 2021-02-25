@@ -1,5 +1,5 @@
 .navbarContainer {
-  min-height: 67px;
+  min-height: 52px;
 }
 
 .mainNav {
@@ -18,8 +18,8 @@
 }
 
 .logoContainer .imageSize {
-  width: 156px;
-  height: 46px;
+  width: 150px;
+  height: 43px;
 }
 
 .navbarList {
@@ -50,9 +50,16 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
+  .navbarContainer {
+    min-height: 52px;
+  }
+  
   .mainNav {
     padding: 0 20px;
+    height: 52px;
+    justify-content: space-around;
   }
+
   .logoContainer .imageSize {
     width: 105px;
     height: 35px;
@@ -67,38 +74,56 @@
     display: none;
   }
 
-  .mainNav {
-    justify-content: space-evenly;
+  .navbarList .navbarListItems {
+    padding: 0 10px;
   }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   .navbarContainer {
-    min-height: 80px;
-  }
-
-  .logoContainer .imageSize {
-    width: 120px;
-    height: 40px;
-  }
-
-  .mainNav .navbarList .navbarListItems button {
-    display: flex;
-    flex-direction: column;
+    min-height: 55px;
   }
 
   .mainNav {
-    justify-content: inherit;
+    height: 55px;
+    justify-content: space-around;
   }
 
   .mainNav .navbarList .navbarListItems a {
     font-size: 12px;
   }
-}
 
-@media only screen and (min-width: 426px) and (max-width: 575px) {
   .mainNav .navbarList .navbarListItems button {
     display: flex;
     flex-direction: column;
+  }
+
+  .logoContainer .imageSize {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+  .navbarContainer {
+    min-height: 56px;
+  }
+
+  .mainNav {
+    height: 56px;
+  }
+
+  .mainNav .navbarList .navbarListItems button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoContainer .imageSize {
+    width: 130px;
+    height: 40px;
+  }
+
+  .mainNav .navbarList .navbarListItems a {
+    font-size: 13px;
   }
 }
