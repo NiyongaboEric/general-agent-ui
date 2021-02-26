@@ -6,12 +6,17 @@ import Details from './Details/Details'
 import { useViewProduct } from "../../../containers/hooks/useProducts";
 import styles from './single.module.css'
 export const SingleProduct = () => {
-  const router = useRouter()
-  const {id} = router.query
+  const {query } = useRouter()
+  const {id} = query
+
   const { isLoading, isError, data } = useViewProduct(id)
-  if (isError) return <div>THERE IS AN ERRO:____{isError}</div>
+  if (isError) {
+    console.log("##___SIMLGE PAGE ___ERROR___", isError)
+    return <div>THERE IS AN ERRO:____{isError}</div>}
   if (isLoading) return <div>LOADING_______{isLoading}</div>
-  if(data){
+  // if(data && !data.message){
+  if(data && (data.message === null) || (data.message === undefined)){
+    console.log("##_____DATA_______", data)
     return (
       <>
         <div className={styles.container}>
@@ -24,5 +29,8 @@ export const SingleProduct = () => {
         </div>
         </>
     )
+  }
+  else{
+    return <div>{data.message}</div>
   }
 };
