@@ -2,10 +2,16 @@ import { LISTED_PRODUCTS } from '../../../constant/data'
 export default (req, res) => {
   const statusCodeSuccess = 200;
   const statusCodeNotfound = 404;
-  const { id } = req.query;
+  const { id, path } = req.query;
+  console.log('##___________IS VALID_____',id, "++++++TYPE OF____", typeof id, path)
   const isValidId = Number(id);
-
-  if (isNaN(isValidId)) {
+  // console.log('##___________IS VALID_____',isNaN( isValidId))
+  if (isNaN(isValidId) || parseInt(id) === 0 ||
+  ( (typeof id).toString() === 'undefined') || (typeof id === null )|| 
+   (typeof parseInt(id) === 'undefined') ||( id === "undefined")
+   
+   ) {
+    console.log("###_____1____If_______", isValidId)
     return res
     .status(statusCodeNotfound)
     .json(
@@ -14,6 +20,7 @@ export default (req, res) => {
       }
     )
   }else{
+    console.log("###____2_____ELSE_______", isValidId)
     const result = LISTED_PRODUCTS.find((product) => product.id_no === parseInt(id))
     if (!result) {
       res

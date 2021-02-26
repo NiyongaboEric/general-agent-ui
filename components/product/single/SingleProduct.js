@@ -8,14 +8,15 @@ import styles from './single.module.css'
 export const SingleProduct = () => {
   const {query } = useRouter()
   const {id} = query
-
+  console.log("##___SIMLGE PAGE _IDD_______",parseInt( id))
   const { isLoading, isError, data } = useViewProduct(id)
   if (isError) {
+    console.log("##___SIMLGE PAGE ___ERROR___", isError)
     console.log("##___SIMLGE PAGE ___ERROR___", isError)
     return <div>THERE IS AN ERRO:____{isError}</div>}
   if (isLoading) return <div>LOADING_______{isLoading}</div>
   // if(data && !data.message){
-  if(data && (data.message === null) || (data.message === undefined)){
+  if(data && (data.message === null) && (data.message === undefined) && !isNaN(id)){
     // console.log("##_____DATA_______", data)
     return (
       <>
@@ -31,6 +32,6 @@ export const SingleProduct = () => {
     )
   }
   else{
-    return <div>{data.message}</div>
+    return <div>Product Not found</div>
   }
 };
