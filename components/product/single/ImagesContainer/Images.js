@@ -3,7 +3,6 @@ import ImagesStyles from './images.module.css'
 import Image from 'next/image';
 
 const ImagesContainer = ({product}) => {
-    console.log("____IMAGESS++++++", product)
     const [currentImage, setCurrentImage] = useState(product.product_images[0].image_one)
     return (
         <div className={ImagesStyles.imagesSection}>
@@ -26,21 +25,21 @@ const ImagesContainer = ({product}) => {
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_one)}
               src={product.product_images[0].image_one}
               width={300}
-              height={220}
+              height={210}
               alt={product.product_title}
             />
             <Image
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_two)}
               src={product.product_images[0].image_two}
               width={300}
-              height={220}
+              height={210}
               alt={product.product_title}
             />
             <Image
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_three)}
               src={product.product_images[0].image_three}
               width={300}
-              height={220}
+              height={210}
               alt={product.product_title}
             />
 

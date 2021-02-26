@@ -36,9 +36,9 @@
         width: 90%;
     }
     .detailsList {
-        font-size: 17px;
+        font-size: 15px;
     }
-    .detailsTitle {
-        font-size: 20px;
+    .detailsTitle { 
+        font-size: 16px;
     }
 }

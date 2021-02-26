@@ -5,17 +5,15 @@ import ImagesContainer from '../../../components/product/single/ImagesContainer/
 import Description from '../../../components/product/single/Description/Description'
 import Details from '../../../components/product/single/Details/Details'
 import PickupInfo from '../../../components/footer/PickupInfo/PickupInfo'
-import {server} from '../../../config'
 import { Header } from '../../../components/headers/Header';
 import { useViewProduct } from '../../../containers/hooks/useProducts';
 import {useRouter} from 'next/router'
-export default function details({product}) {
+
+export default function details() {
   const router = useRouter()
   const {id} = router.query
-  console.log("@___1__DATA_____", id)
 
   const { isLoading, isError, data } = useViewProduct(id)
-  console.log("@__2___DATA_____", data)
   if (isError) return <div>THERE IS AN ERRO:____{isError}</div>
   if (isLoading) return <div>LOADING_______{isLoading}</div>
   
@@ -37,20 +35,6 @@ export default function details({product}) {
             </div>
 
         </div>
-        {/* <div className={styles.container}>
-            <Topbar />
-            <ImagesContainer product={product}/>
-
-            <div className={styles.productDetails}>
-
-                <Description product={product}/>
-
-                    <Details product={product}/>
-
-                <PickupInfo />
-            </div>
-
-        </div> */}
         </>
     )
 }

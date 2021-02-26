@@ -1,13 +1,28 @@
 import { LISTED_PRODUCTS } from '../../../constant/data'
-
-export default function handler({ query: { id_no } }, res) {
-  const filtered = LISTED_PRODUCTS.filter((product) => product.id === id_no)
-
-  if (filtered.length > 0) {
-    res.status(200).json(filtered[0])
-  } else {
+export default (req, res) => {
+  const statusCodeSuccess = 200;
+  const statusCodeNotfound = 404;
+  const { id } = req.query;
+  const isValidId = parseInt(id);
+  if (!isValidId) {
+    return res
+    .status(statusCodeNotfound)
+    .json(
+      {
+        message: `OOPs! Product with the id of ${id} is not valid.`,
+      }
+    )
+  }
+  const result = LISTED_PRODUCTS.find((product) => product.id_no === isValidId)
+  if (!result) {
     res
-      .status(404)
-      .json({ message: `DEVELOPMENT ERROR___Product with the id of ${id_no} is not found` })
+    .status(statusCodeNotfound)
+    .json(
+      { 
+        message: `OOPs! Product with the id of ${id} is not found.`
+      }
+    )    
+  } else {
+    return res.status(statusCodeSuccess).json(result);
   }
 }

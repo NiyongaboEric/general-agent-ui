@@ -48,7 +48,11 @@
         justify-content: space-between;
     } 
     .namePrice p {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .description {
+        font-size: 15px;
     }
     /* .descriptionContainer{
         height: 340px;
