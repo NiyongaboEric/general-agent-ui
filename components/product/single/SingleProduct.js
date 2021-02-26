@@ -16,7 +16,7 @@ export const SingleProduct = () => {
   if (isLoading) return <div>LOADING_______{isLoading}</div>
   // if(data && !data.message){
   if(data && (data.message === null) || (data.message === undefined)){
-    console.log("##_____DATA_______", data)
+    // console.log("##_____DATA_______", data)
     return (
       <>
         <div className={styles.container}>

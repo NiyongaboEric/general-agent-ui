@@ -11,7 +11,7 @@ const ImagesContainer = ({product}) => {
             <Image
               src={currentImage}
               width={650}
-              height={455}
+              height={430}
               alt={product.product_title}
             />
         </div>
@@ -21,27 +21,33 @@ const ImagesContainer = ({product}) => {
             {/* <img onClick={()=>setCurrentImage(product.product_images[0].image_one)}  src={product.product_images[0].image_one} className={ImagesStyles.otherImage1} />
             <img onClick={()=>setCurrentImage(product.product_images[0].image_two)}  src={product.product_images[0].image_two} className={ImagesStyles.otherImage} />
             <img onClick={()=>setCurrentImage(product.product_images[0].image_three)} src={product.product_images[0].image_three} className={ImagesStyles.otherImage} /> */}
+         <div>
             <Image
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_one)}
               src={product.product_images[0].image_one}
-              width={300}
-              height={210}
+              width={200}
+              height={140}
               alt={product.product_title}
             />
+         </div>
+         <div>
             <Image
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_two)}
               src={product.product_images[0].image_two}
-              width={300}
-              height={210}
+              width={200}
+              height={140}
               alt={product.product_title}
             />
+         </div>
+         <div>
             <Image
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_three)}
               src={product.product_images[0].image_three}
-              width={300}
-              height={210}
+              width={200}
+              height={140}
               alt={product.product_title}
             />
+         </div>
 
         </div>
     </div>

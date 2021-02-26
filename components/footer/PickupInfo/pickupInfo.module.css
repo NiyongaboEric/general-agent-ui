@@ -16,7 +16,7 @@
     text-transform: capitalize;
 } 
 .pickupInfoContainer {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 30px;
     padding-bottom: 10px;
     background-color: var(--gray-color);
@@ -33,11 +33,11 @@
     font-weight: 400;
     font-size: 25px;
 }
-@media (max-width: 1160px){
+/* @media (max-width: 1160px){
     .pickupInfoContainer {
         margin-top: 50px;
     }  
-}
+} */
 @media (max-width: 440px){
     .pickupInfo {
         width: 90%;
@@ -47,7 +47,6 @@
     }
     .pickupTitle {
         font-size: 16px;
-        /* background-color: chartreuse; */
     }
 }
 

@@ -5,7 +5,7 @@
     align-items: center;
 }
 .mainImageContainer {
-    height: 400px;
+    /* height: 400px; */
     
 }
 .otherImagesContainer {
@@ -13,7 +13,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 10px;
-    height: 400px;
+    /* height: 400px; */
+    /* height: 400px; */
     border-radius: 5;
     cursor: pointer;
 }
@@ -26,7 +27,7 @@
     object-fit:fill;
 }
 
-.otherImage1 {
+/* .otherImage1 {
     width: 220px;
     height: 132px;
     border-radius: 5;
@@ -39,7 +40,7 @@
     padding-top: 10px;
     border-radius: 5;
     cursor: pointer;
-}
+} */
 
 @media (max-width: 900px){
     .imagesSection {
@@ -103,10 +104,13 @@
     }
     .otherImagesContainer {
         flex-direction: row;
-        justify-content: center;
-        width: auto;
-        padding-left: 0px;
+        /* justify-content: space-evenly; */
+        /* width: auto; */
+        /* padding-left: 0px; */
     }    
+    .otherImagesContainer div{
+        margin: 5px;
+    }
     .otherImage1 {
         width: 30%;
     }
