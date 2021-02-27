@@ -1,7 +1,6 @@
 import useSWR from "swr"
 const fetcher = async url => {
   const res = await fetch(url)
-  console.log('res fethed', res);
   if (!res.ok) {
     const error = new Error('An error occurred while fetching the data.')
     error.info = await res.json()

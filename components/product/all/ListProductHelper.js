@@ -15,6 +15,7 @@ import {
   progressBarStatus,
 } from '../../../helpers/formulas/ProductFormula';
 import productStyle from './allProducts.module.css';
+import {translateHook} from '../../../locales/translate'
 
 const DetailsInfo = (props) => {
   const { label, value } = props;
@@ -27,6 +28,7 @@ const DetailsInfo = (props) => {
 };
 
 export const ListProductHelper = (props) => {
+  const translate = translateHook()
   const { item } = props;
   return (
     <Link href={`/products/${item.id_no}`}>
@@ -42,7 +44,7 @@ export const ListProductHelper = (props) => {
             />
           </section>
           <section className={productStyle.bottomSection}>
-            <h2 className={productStyle.productOverview}>OVERVIEW</h2>
+            <h2 className={productStyle.productOverview}>{translate.overview}</h2>
             <ProgressBar
               bgColor={PROJECT_COLOUR_MESSAGE}
               completed={
@@ -53,17 +55,17 @@ export const ListProductHelper = (props) => {
               }
             />
             <DetailsInfo
-              label={PRICE_MESSAGE}
+              label={translate.price}
               value={
                 `${productPrice(item.total_money_expect, item.total_items_in_stock)} ${item.product_currency}`
               }
             />
             <DetailsInfo
-              label={ITEMS_REMAINING_IN_STOCK_MESSAGE}
+              label={translate.remainings}
               value={item.items_remaining_in_stock}
             />
             <DetailsInfo
-              label={TOTAL_PAYMENT_REMAINING_MESSAGE}
+              label={translate.paymentRemaining}
               value={
                 `${
                   totalPaymentRemaining(
