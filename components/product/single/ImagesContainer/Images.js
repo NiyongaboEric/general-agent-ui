@@ -7,7 +7,6 @@ const ImagesContainer = ({product}) => {
     return (
         <div className={ImagesStyles.imagesSection}>
         <div className={ImagesStyles.mainImageContainer}>
-            {/* <img src={currentImage} className={ImagesStyles.mainImage} /> */}
             <Image
               src={currentImage}
               width={650}
@@ -18,9 +17,6 @@ const ImagesContainer = ({product}) => {
 
         <div className={ImagesStyles.otherImagesContainer}>
             
-            {/* <img onClick={()=>setCurrentImage(product.product_images[0].image_one)}  src={product.product_images[0].image_one} className={ImagesStyles.otherImage1} />
-            <img onClick={()=>setCurrentImage(product.product_images[0].image_two)}  src={product.product_images[0].image_two} className={ImagesStyles.otherImage} />
-            <img onClick={()=>setCurrentImage(product.product_images[0].image_three)} src={product.product_images[0].image_three} className={ImagesStyles.otherImage} /> */}
          <div>
             <Image
             onMouseOver={()=>setCurrentImage(product.product_images[0].image_one)}

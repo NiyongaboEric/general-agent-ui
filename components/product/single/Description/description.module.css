@@ -1,9 +1,3 @@
-/* .descriptionContainer{
-    height: 340px;
-    background-color: var(--gray-color);
-    margin-top: 20px;
-    border-radius: 5px;
-} */
 .namePrice {
     display: flex;
     flex-direction: row;
@@ -15,7 +9,7 @@
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -30,9 +24,7 @@
     font-size: 18px;
     font-weight: 300;
 }
-/* @media (max-width: 1160px){
-  
-} */
+
 @media (max-width: 688px){
     .productDetails {
         height: 860px;
@@ -54,7 +46,5 @@
     .description {
         font-size: 15px;
     }
-    /* .descriptionContainer{
-        height: 340px;
-    } */
+
 }

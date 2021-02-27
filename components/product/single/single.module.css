@@ -39,9 +39,7 @@
 
 @media (max-width: 688px){
     .productDetails {
-        height: 725px;
-        /* padding-bottom: 10px; */
-        
+        height: 725px;        
     }
 }
 

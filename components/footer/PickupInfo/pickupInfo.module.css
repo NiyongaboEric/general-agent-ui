@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
     padding: 0;
 }
@@ -16,7 +16,6 @@
     text-transform: capitalize;
 } 
 .pickupInfoContainer {
-    /* margin-top: 30px; */
     margin-bottom: 30px;
     padding-bottom: 10px;
     background-color: var(--gray-color);
@@ -31,13 +30,9 @@
     padding-top: 10px;
     padding-left: 30px;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
 }
-/* @media (max-width: 1160px){
-    .pickupInfoContainer {
-        margin-top: 50px;
-    }  
-} */
+
 @media (max-width: 440px){
     .pickupInfo {
         width: 90%;
@@ -49,14 +44,3 @@
         font-size: 16px;
     }
 }
-
-/* @media (max-width: 900px){
-    .pickupInfoContainer {
-        margin-top: 150px;
-    }    
-} */
-/* @media (max-width: 688px){
-    .pickupInfoContainer {
-        margin-top: 40px;
-    }
-} */
