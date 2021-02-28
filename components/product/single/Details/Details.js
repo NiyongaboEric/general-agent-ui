@@ -9,7 +9,7 @@ TOTAL_PAYMENT_EXPECTED,
 DEADLINE,
 OWNER
 } from '../../../../constant/message'
-
+import { productPrice, totalPaymentReceived } from '../../../../helpers/formulas/ProductFormula'
 export default function Details({product}) {
     return (
         <>
@@ -26,11 +26,29 @@ export default function Details({product}) {
                     </div>
                     <div className={DetailsStyles.detailsList}>
                         <p className={DetailsStyles.detailOption}>{TOTAL_PAYMENT_RECEIVED}</p>
-                        <p>54,000 RWF</p>
+                        <p>
+                            {`
+                                ${
+                                    totalPaymentReceived(
+                                        product.total_items_in_stock,
+                                        product.items_remaining_in_stock, 
+                                        productPrice(
+                                            product.total_money_expect,
+                                            product.total_items_in_stock
+                                        )
+                                    )
+                                }
+                                ${product.product_currency}
+                            `}
+                        </p>
                     </div>
                     <div className={DetailsStyles.detailsList}>
                         <p className={DetailsStyles.detailOption}>{TOTAL_PAYMENT_EXPECTED}</p>
-                        <p>{product.total_money_expect} RWF</p>
+                        <p>
+                            {`
+                                ${product.total_money_expect} ${product.product_currency}
+                            `}
+                        </p>
                     </div>
                     <div className={DetailsStyles.detailsList}>
                         <p className={DetailsStyles.detailOption}>{DEADLINE}</p>
