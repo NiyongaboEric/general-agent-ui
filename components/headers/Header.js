@@ -5,10 +5,8 @@ import {
   languageListProperties,
 } from '../../constant/listedObject';
 import HeaderStyle from './header.module.css';
-import {useRouter} from 'next/router'
 
 export const Header = () => {
-  const router = useRouter()
 
   return (
     <nav className={HeaderStyle.navbarContainer}>
@@ -25,7 +23,6 @@ export const Header = () => {
         <ul className={HeaderStyle.navbarList}>
           {
             languageListProperties.map((lang, index) => (
-              <Link href={router.asPath} locale={lang.locale}>
               <li 
                 className={HeaderStyle.navbarListItems}
                 key={index}
@@ -41,7 +38,6 @@ export const Header = () => {
                   <a>({lang.language})</a> 
                 </button>
               </li>
-              </Link>
               )
             )
           }

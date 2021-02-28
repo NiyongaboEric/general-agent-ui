@@ -8,17 +8,15 @@ import {
   LOADING_MESSAGE,
 } from '../../../constant/message';
 import productStyle from './allProducts.module.css';
-import {translateHook } from '../../../locales/translate'
 
 export const AllProducts = () => {
-  const transalte = translateHook()
   const { isLoading, isError, data } = useViewAllProduct()
   if (isError) return <div>{PAGE_FAILED_TO_LOAD_MESSAGE}</div>
   if (isLoading) return <div>{LOADING_MESSAGE}</div>
   
   return (
     <div className={productStyle.productContainer}>
-      <h2 className={productStyle.storyProduct}>{transalte.whatYouSee}</h2>
+      <h2 className={productStyle.storyProduct}>{BUY_ALL_PRODUCT_MESSAGE}</h2>
       <div className={productStyle.listProducts}>
         {
           data.length === 0
