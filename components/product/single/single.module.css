@@ -1,62 +1,60 @@
-.pickupInfoDetails{
-    padding-left: 250px;
-    padding-right: 250px;
-}
 .container {
-    padding-left: 250px;
-    padding-right: 250px;
-    margin-bottom: 20px;
+    height: 100%;
 }
-
 .productDetails {
-    height: 380px;
     background-color: var(--gray-color);
-    margin-top: 20px;
     border-radius: 5px;
+    margin: 10px;
 }
-
-@media (max-width: 1160px){
-    .container {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-bottom: 300px;
-    } 
-    .pickupInfoDetails{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .pickupInfo {
-        width: 90%;
-    }
-    .productDetails {
-        margin-top: 10px;
-        height: 640px;
-    }
-}
-@media (max-width: 900px){
-
-}
-
-@media (max-width: 688px){
-    .productDetails {
-        height: 725px;        
-    }
-}
-
-@media (max-width: 440px){
+@media only screen and (min-width: 320px) and (max-width: 425px) {
     .container {
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
         padding: 0;
         margin: 0;
-        margin-bottom: 10px;
-    }  
-    .pickupInfoDetails{
-        padding-left: 0px;
-        padding-right: 0px;
-    }  
+    }
     .productDetails {
-        height: 490px;
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+    .productDetails {
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .productDetails {
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+    .productDetails {
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+    .productDetails {
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 1441px){
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+    .productDetails {
+        margin: 10px 0;
+        padding: 0 10px;
     }
 }

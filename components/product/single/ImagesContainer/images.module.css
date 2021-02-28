@@ -1,19 +1,16 @@
 .imagesSection {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .otherImagesContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 10px;
-    border-radius: 5;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
-
 .mainImage {
     width: 100%;
     height: 100%;
@@ -21,61 +18,8 @@
     background-size: cover;
     object-fit:fill;
 }
-
-@media (max-width: 900px){
-    .imagesSection {
-        margin-top: 20px;
-        flex-direction: column;
-    }
-    .mainImage {
-        width: 95%;
-    }
+@media only screen and (min-width: 320px) and (max-width: 425px) {
     .mainImageContainer {
-        text-align: center;
-    }
-    
-.otherImagesContainer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    height: 180px;
-    width: 95%;
-}
-.otherImage1 {
-    padding: 10px;
-}
-.otherImage {
-    padding: 10px;
-}
-}
-
-@media (max-width: 688px){
-    .otherImagesContainer {
-        flex-direction: row;
-        height: auto;
-        align-items: center;
-        padding-left: 0px;
-    }
-    .mainImageContainer {
-        height: auto;
-    }
-    .mainImage {
-        height: 50%;
-    }
-    .otherImage1 {
-        width: 30%;
-        height: 100%;
-    }
-    
-    .otherImage {
-        width: 30%;
-        height: 100%;
-    }
-}
-
-@media (max-width: 440px){
-    .mainImageContainer {
-        padding: 10px;
         width: 100%;
     }
     .mainImage {
@@ -90,8 +34,51 @@
     .otherImage1 {
         width: 30%;
     }
-    
     .otherImage {
         width: 30%;
+    }
+    .imagesSection {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+    .imagesSection {
+        padding: 10px;
+    }
+    .mainImageContainer {
+        padding: 0px 5px 0px 10px;
+    }
+    .otherImagesContainer {
+        padding: 0px 10px 0px 5px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .imagesSection {
+        padding: 10px;
+    }
+    .mainImageContainer {
+        padding: 0px 5px 0px 10px;
+    }
+    .otherImagesContainer {
+        padding: 0px 10px 0px 5px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .otherImagesContainer {
+        padding: 0px 0px 0px 10px;
+    }
+    .imagesSection {
+        padding: 10px 0;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .imagesSection {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1441px){
+    .imagesSection {
+        justify-content: center;
     }
 }

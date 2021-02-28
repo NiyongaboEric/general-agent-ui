@@ -3,37 +3,21 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
 .namePrice p {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
     font-weight: 400;
     font-size: 20px;
 }
-
-
 .productPrice {
     color: var(--blue-color);
 }
 .description {
-    text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 18px;
     font-weight: 300;
+    font-weight: 450;
 }
-
-@media (max-width: 688px){
-    .productDetails {
-        height: 860px;
-        padding-bottom: 10px;
-        
-    }
-}
-
-@media (max-width: 440px){
+@media only screen and (min-width: 320px) and (max-width: 425px) {
     .namePrice {
         display: flex;
         flex-direction: column;
@@ -41,10 +25,88 @@
     } 
     .namePrice p {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
     }
     .description {
         font-size: 15px;
+        letter-spacing: 0.5px;
+        margin: 10px 0;
     }
-
 }
+@media only screen and (min-width: 426px) and (max-width: 575px) {
+    .namePrice {
+        align-items: center;
+    }
+    .namePrice p:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        padding: 10px 10px 10px 10px;
+    }
+    .description {
+        font-size: 16px;
+        padding: 10px 0px;
+        letter-spacing: 0.2px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .namePrice {
+        align-items: center;
+    }
+    .namePrice p:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+    .description {
+        font-size: 16px;
+        font-weight: 300;
+        padding: 10px 0px;
+        letter-spacing: 0.2px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .namePrice {
+        align-items: center;
+    }
+    .namePrice p:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+    .description {
+        font-size: 16px;
+        padding: 10px 0px;
+        letter-spacing: 0.2px;
+    }
+}   
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .namePrice {
+        align-items: center;
+    }
+    .namePrice p:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+    .description {
+        font-size: 16px;
+        padding: 10px 0px;
+        letter-spacing: 0.2px;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .namePrice {
+        align-items: center;
+    }
+    .namePrice p:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+    .description {
+        font-size: 16px;
+        padding: 10px 0px;
+        letter-spacing: 0.2px;
+    }
+} 

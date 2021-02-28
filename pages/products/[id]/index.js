@@ -9,7 +9,7 @@ export default function details() {
     <>
       <Header />
       <SingleProduct />
-      <div className={pickupInfoStyleys.pickupInfoDetails}>
+      <div className={pickupInfoStyleys.container}>
       <PickupInfo />
       </div>
     </>
