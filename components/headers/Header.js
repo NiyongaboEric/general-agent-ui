@@ -6,8 +6,8 @@ import {
 } from '../../constant/listedObject';
 import HeaderStyle from './header.module.css';
 
-
 export const Header = () => {
+
   return (
     <nav className={HeaderStyle.navbarContainer}>
       <div className={HeaderStyle.mainNav}>

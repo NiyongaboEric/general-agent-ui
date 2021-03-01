@@ -29,7 +29,7 @@ const DetailsInfo = (props) => {
 export const ListProductHelper = (props) => {
   const { item } = props;
   return (
-    <Link href={`/product/${item.id_no}`}>
+    <Link href={`/products/${item.id_no}`}>
       <a>
         <div className={productStyle.oneProduct}>
           <section className={productStyle.topSection}>
@@ -42,7 +42,7 @@ export const ListProductHelper = (props) => {
             />
           </section>
           <section className={productStyle.bottomSection}>
-            <h2 className={productStyle.productOverview}>OVERVIEW</h2>
+            <h2 className={productStyle.productOverview}>overview</h2>
             <ProgressBar
               bgColor={PROJECT_COLOUR_MESSAGE}
               completed={

@@ -6,8 +6,7 @@ import {
 } from './../constant/message';
 import { LandingPage } from '../components/homePage/LandingPage';
 
-
-const Home = (props) => {
+const Home = () => {
   return (
     <>
       <Meta
@@ -16,8 +15,10 @@ const Home = (props) => {
         keywords={KEYWORDS_MESSAGE}
       />
       <LandingPage />
+      <div>
+      </div>
     </>
   );
 }
 
-export default Home;
+export default Home

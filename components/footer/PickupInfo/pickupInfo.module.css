@@ -1,0 +1,43 @@
+.detailsListContainer {
+    width: 50%;
+}
+.detailsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 1px 0;
+}
+.detailOption {
+    padding-left: 30px;
+    text-transform: capitalize;
+    font-weight: 450;
+} 
+.pickupInfoContainer {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: var(--gray-color);
+    border-radius: 5px;
+}
+.pickupInfo {
+    width: 70%;
+}
+.pickupTitle {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+@media (max-width: 440px){
+    .pickupInfo {
+        width: 90%;
+    }
+    .detailsList {
+        font-size: 15px;
+    }
+    .pickupTitle {
+        font-size: 16px;
+    }
+}

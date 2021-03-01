@@ -15,11 +15,13 @@ import {
 export const languageListProperties = [
   {
     language: 'Kinyarwanda',
+    locale: 'kin',
     imgPath: RWANDA_FLAG_URL,
     imgAlt: KINYARWANDA_LANGUAGE_MESSAGE,
   },
   {
     language: 'English',
+    locale: 'en',
     imgPath: USA_FLAG_URL,
     imgAlt: ENGLISH_LANGUAGE_MESSAGE,
   }

@@ -9,7 +9,6 @@ import {
 } from '../../../constant/message';
 import productStyle from './allProducts.module.css';
 
-
 export const AllProducts = () => {
   const { isLoading, isError, data } = useViewAllProduct()
   if (isError) return <div>{PAGE_FAILED_TO_LOAD_MESSAGE}</div>

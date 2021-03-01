@@ -4,7 +4,7 @@ import LandingPageStyle from './homePage.module.css';
 export const Partners = () => {
   return (
     <div className={LandingPageStyle.listPartners}>
-      <h2 className={LandingPageStyle.title}> Our partners</h2>
+      <h2 className={LandingPageStyle.title}>Our partners</h2>
       <div className={LandingPageStyle.infoPartner}>
         {
           listPartners.map((partner, index) => (
