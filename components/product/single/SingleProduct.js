@@ -16,7 +16,7 @@ export const SingleProduct = () => {
   return (
     <>
       <div className={styles.container}>
-        <Topbar />
+        <Topbar data={data}/>
         <ImagesContainer product={data} />
         <div className={styles.productDetails}>
           <Description product={data} />

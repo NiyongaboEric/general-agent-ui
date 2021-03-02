@@ -45,6 +45,8 @@ export const totalPaymentRemaining = (moneyexpect, receivedmoney) => {
 */
 
 export const progressBarStatus = (totalItemsInStock, items_remaining_in_stock) => {
+
+  if (totalItemsInStock === items_remaining_in_stock) return 0;
   const allItemsInStock = parseInt(totalItemsInStock);
   const allRemainsInStock = parseInt(items_remaining_in_stock);
   const quotient = allRemainsInStock /  allItemsInStock;

@@ -8,15 +8,15 @@ export default function PickupInfo() {
             <p className={PickupInfoStyle.pickupTitle}>Pick up information</p>
             <div className={PickupInfoStyle.detailsList}>
                 <p className={PickupInfoStyle.detailOption}>Venue</p>
-                <p>Kicukiro</p>
+                <p>Gasabo</p>
             </div>
             <div className={PickupInfoStyle.detailsList}>
                 <p className={PickupInfoStyle.detailOption}>Street</p>
-                <p>KK 30 st</p>
+                <p>KG 24 Ave</p>
             </div>
             <div className={PickupInfoStyle.detailsList}>
                 <p className={PickupInfoStyle.detailOption}>our contact</p>
-                <p>+250 788 888 888</p>
+                <p>+250 787533882</p>
             </div>
         </div>
     </div>

@@ -43,7 +43,7 @@ export const ListProductHelper = (props) => {
           </section>
           <section className={productStyle.bottomSection}>
             <h2 className={productStyle.productOverview}>overview</h2>
-            <ProgressBar
+            {/* <ProgressBar
               bgColor={PROJECT_COLOUR_MESSAGE}
               completed={
                 progressBarStatus(
@@ -51,7 +51,7 @@ export const ListProductHelper = (props) => {
                   item.items_remaining_in_stock, 
                 )
               }
-            />
+            /> */}
             <DetailsInfo
               label={PRICE_MESSAGE}
               value={

@@ -10,7 +10,7 @@ export const LandingPage = (props) => {
       <Header />
       <Advertise />
       <AllProducts />
-      <Partners />
+      {/* <Partners /> */}
       <Info />
     </>
   );
